@@ -1,6 +1,6 @@
 {
   "name": "angle-printer",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Pretty print radians and degrees. Also converts between them.",
   "main": "angle-printer.js",
   "scripts": {

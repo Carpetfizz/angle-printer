@@ -15,6 +15,10 @@
     "pretty",
     "print"
   ],
+  "repository" :
+  { "type" : "git",
+   "url" : "https://github.com/Carpetfizz/angle-printer"
+  },
   "author": "Ajay Ramesh <ajayramesh.dev@gmail.com> (http://ajayramesh.com)",
   "licenses": [
     {

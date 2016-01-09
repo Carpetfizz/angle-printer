@@ -5,7 +5,7 @@ function AnglePrinter(){
 	}
 }
 
-AnglePrinter.prototype.toRadian = function(degrees){
+AnglePrinter.prototype.toRadians = function(degrees){
 
 	// Account for integer coefficients of degrees / 180
 	if(degrees % 180 == 0) {
@@ -58,8 +58,8 @@ AnglePrinter.prototype.toDegrees = function(radian){
 	return radian * (180/Math.PI) + "°";
 }
 
-AnglePrinter.prototype.printRadian = function(radian){
-	return this.toRadian(radian * (180/Math.PI));
+AnglePrinter.prototype.printRadians = function(radian){
+	return this.toRadians(radian * (180/Math.PI));
 }
 
 AnglePrinter.prototype.printDegrees = function(degrees){

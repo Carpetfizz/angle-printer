@@ -1,24 +1,24 @@
 var should = require('chai').should(),
 	anglePrinter = require('../angle-printer');
 
-describe('#toRadian', function(){
+describe('#toRadians', function(){
 	it('converts 270 to 3π/2', function(){
-		anglePrinter.toRadian(270).should.equal('3π/2');
+		anglePrinter.toRadians(270).should.equal('3π/2');
 	});
 	it('converts 360 to 2π', function(){
-		anglePrinter.toRadian(360).should.equal('2π');
+		anglePrinter.toRadians(360).should.equal('2π');
 	});
 	it('converts 90 to π/2', function(){
-		anglePrinter.toRadian(90).should.equal('π/2');
+		anglePrinter.toRadians(90).should.equal('π/2');
 	});
 	it('converts -90 to -π/2', function(){
-		anglePrinter.toRadian(-90).should.equal('-π/2');
+		anglePrinter.toRadians(-90).should.equal('-π/2');
 	});
 	it('converts 180 to π', function(){
-		anglePrinter.toRadian(180).should.equal('π');
+		anglePrinter.toRadians(180).should.equal('π');
 	});
 	it('converts -180 to -π', function(){
-		anglePrinter.toRadian(-180).should.equal('-π');
+		anglePrinter.toRadians(-180).should.equal('-π');
 	});
 });
 
@@ -43,24 +43,24 @@ describe('#toDegrees', function(){
 	});
 });
 
-describe('#printRadian', function(){
+describe('#printRadians', function(){
 	it('converts 3*Math.PI/2 to 3π/2', function(){
-		anglePrinter.printRadian(3*Math.PI/2).should.equal('3π/2');
+		anglePrinter.printRadians(3*Math.PI/2).should.equal('3π/2');
 	});
 	it('converts 2*Math.PI to 2π', function(){
-		anglePrinter.printRadian(2*Math.PI).should.equal('2π');
+		anglePrinter.printRadians(2*Math.PI).should.equal('2π');
 	});
 	it('converts Math.PI/2 to π/2', function(){
-		anglePrinter.printRadian(Math.PI/2).should.equal('π/2');
+		anglePrinter.printRadians(Math.PI/2).should.equal('π/2');
 	});
 	it('converts -Math.PI/2 to -π/2', function(){
-		anglePrinter.printRadian(-Math.PI/2).should.equal('-π/2');
+		anglePrinter.printRadians(-Math.PI/2).should.equal('-π/2');
 	});
 	it('converts Math.PI to π', function(){
-		anglePrinter.printRadian(Math.PI).should.equal('π');
+		anglePrinter.printRadians(Math.PI).should.equal('π');
 	});
 	it('converts -Math.PI to -π', function(){
-		anglePrinter.printRadian(-Math.PI).should.equal('-π');
+		anglePrinter.printRadians(-Math.PI).should.equal('-π');
 	});
 });
 
